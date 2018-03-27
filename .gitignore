@@ -22,3 +22,8 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+lib/bs/
+.merlin
+.bsb.lock
+*.bs.js
