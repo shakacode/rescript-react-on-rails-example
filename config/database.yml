@@ -1,9 +1,13 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: db
-  username: postgres
-  password:
+  # comment out next line for Docker
+  host: localhost
+
+  # Uncomment next 3 lines for Docker
+  # host: db
+  # username: postgres
+  # password:
   pool: 5
 
 development:
