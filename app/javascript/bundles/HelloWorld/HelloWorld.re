@@ -14,21 +14,15 @@ let make = (~name: string, _) => {
     },
   render: ({state, send}) =>
     <div>
-      <h3>
-        ("Hello, " ++ state.name ++ "!" |> ReasonReact.stringToElement)
-      </h3>
+      <h3> ("Hello, " ++ state.name ++ "!" |> ReasonReact.stringToElement) </h3>
       <hr />
       <form>
-        <label htmlFor="name">
-          ("Say hello to:" |> ReasonReact.stringToElement)
-        </label>
+        <label htmlFor="name"> ("Say hello to:" |> ReasonReact.stringToElement) </label>
         <input
           id="name"
           _type="text"
           value=state.name
-          onChange=(
-            event => UpdateName(event |> Utils.eventTargetValue) |> send
-          )
+          onChange=(event => UpdateName(event |> Utils.eventTargetValue) |> send)
         />
       </form>
     </div>,
