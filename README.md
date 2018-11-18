@@ -29,5 +29,6 @@ The latter will automatically reload the brower window when the you save a chang
 ```shell
 docker-compose build
 docker-compose run web yarn run build
+docker-compose run web rails db:setup
 docker-compose up
 ```
