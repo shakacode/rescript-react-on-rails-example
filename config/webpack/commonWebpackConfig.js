@@ -10,6 +10,12 @@ const commonOptions = {
   },
 };
 
+// This will make webpack ignore .res files during bundle
+baseClientWebpackConfig.module.rules.push({
+  test: /\.res/,
+  loader: 'null-loader',
+})
+
 // Copy the object using merge b/c the baseClientWebpackConfig and commonOptions are mutable globals
 const commonWebpackConfig = () => merge({}, baseClientWebpackConfig, commonOptions);
 
