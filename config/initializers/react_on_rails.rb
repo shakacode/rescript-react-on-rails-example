@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
-# See docs/basics/configuration.md for many more options
+# See https://github.com/shakacode/react_on_rails/blob/master/docs/basics/configuration.md
+# for many more options.
 
 ReactOnRails.configure do |config|
   # This configures the script to run to build the production assets by webpack. Set this to nil
   # if you don't want react_on_rails building this file for you.
-  config.build_production_command = "RAILS_ENV=production bin/webpack"
+  # If nil, then the standard rails/webpacker assets:precompile will run
+  # config.build_production_command = nil
 
   ################################################################################
   ################################################################################
@@ -21,6 +23,8 @@ ReactOnRails.configure do |config|
   # with rspec then this controls what yarn command is run
   # to automatically refresh your webpack assets on every test run.
   #
+  # Alternately, you can remove the `ReactOnRails::TestHelper.configure_rspec_to_compile_assets`
+  # and set the config/webpacker.yml option for test to true.
   config.build_test_command = "RAILS_ENV=test bin/webpack"
 
   ################################################################################
@@ -37,5 +41,5 @@ ReactOnRails.configure do |config|
   # different. You should have ONE server bundle which can create all of your server rendered
   # React components.
   #
-  config.server_bundle_js_file = "hello-world-bundle.js"
+  config.server_bundle_js_file = "server-bundle.js"
 end
