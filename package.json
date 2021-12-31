@@ -9,6 +9,7 @@
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
     "@rails/webpacker": "6.0.0-rc.6",
+    "@rescript/react": "0.10.3",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^6.5.1",
