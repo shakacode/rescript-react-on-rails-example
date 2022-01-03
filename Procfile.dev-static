@@ -1,4 +1,6 @@
 # You can run these commands in separate shells
+rescript: yarn start
+
 web: rails s -p 3000
 
 # Next line runs a watch process with webpack to compile the changed files.

@@ -30,10 +30,3 @@ lib/bs/
 .merlin
 .bsb.lock
 *.bs.js
-
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
