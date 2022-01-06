@@ -18,6 +18,8 @@ type context = {
   "serverSide": bool,
 }
 
-let component = (props: props, _context: context) => <HelloWorld nameProp={props["name"]} />
+let component = (props: props, _context: context) => {
+ (. ()) =>  <HelloWorld nameProp={props["name"]} />
+}
 
 ReactOnRails.register("HelloWorld", component)
