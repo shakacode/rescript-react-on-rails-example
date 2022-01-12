@@ -2,21 +2,30 @@
   "name": "app",
   "private": true,
   "scripts": {
-    "build": "bsb -clean-world -make-world",
-    "build-watch": "bsb -w -make-world"
+    "clean": "rescript clean",
+    "start": "yarn clean && rescript build -w",
+    "build": "yarn clean && rescript build"
   },
   "dependencies": {
-    "@rails/webpacker": "^3.4.1",
-    "babel-preset-react": "^6.24.1",
-    "bs-react-on-rails": "^0.0.1",
-    "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-on-rails": "^11.1.7",
-    "reason-react": "^0.3.4"
+    "@babel/preset-react": "^7.16.7",
+    "@rails/webpacker": "6.0.0-rc.6",
+    "@rescript/react": "0.10.3",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.3.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "null-loader": "^4.0.1",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-on-rails": "12.5.2",
+    "rescript": "9.1.4",
+    "style-loader": "^3.3.1"
   },
   "devDependencies": {
-    "bs-platform": "^2.2.3",
-    "webpack-dev-server": "2.11.2"
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "react-refresh": "^0.11.0",
+    "webpack-dev-server": "^4.2.1"
   }
 }

@@ -1,4 +1,4 @@
-# reason-react-on-rails-example
+# rescript-react-on-rails-example
 
 ## Setup the app
   ```
@@ -10,16 +10,16 @@
 ## Run the app
 
 ```
-foreman start -f Procfile.dev
+foreman start -f Procfile.dev-static
 ```              
 
 or          
 
 ```
-foreman start -f Procfile.dev-server
+foreman start -f Procfile.dev
 ```              
 
-The latter will automatically reload the brower window when the you save a change to the `.re` file. 
+The latter will automatically reload the browser window when the you save a change to the `.res` file. 
 
 # Docker Instructions
 

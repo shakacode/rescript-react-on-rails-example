@@ -7,17 +7,16 @@
     }
   ],
   "bs-dependencies": [
-    "reason-react",
+    "@rescript/react",
     "bs-react-on-rails"
   ],
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
-  "refmt": 3,
   "bsc-flags": ["-bs-super-errors"],
   "suffix": ".bs.js",
   "package-specs": {
-    "module": "commonjs",
+    "module": "es6",
     "in-source": true
   }
 }
